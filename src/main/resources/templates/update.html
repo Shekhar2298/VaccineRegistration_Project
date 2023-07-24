@@ -54,8 +54,10 @@ input[type=submit]:hover {
     <input type="text" id="contact" name="Contact" placeholder="Your Contact Number.." pattern="[6-9]{1}[0-9]{9}" th:value="${updatedata.Contact}" maxlength="10" required >
 
     <label for="vaccine">Vaccine Name</label>
-    <input type="text" id="vaccine" name="Vaccine" placeholder="Enter Vaccine Name.." title="Covaxin, Covishield, Sputnik" th:value="${updatedata.Vaccine}" required>
-
+   <select name="Vaccine" id="vaccine" required>
+        <option value="volvo">Covaxin</option>
+        <option value="saab">Covishield</option>
+        <option value="mercedes">Sputnik</option></select>
 
 
     
